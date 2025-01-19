@@ -1,0 +1,1 @@
+This example demonstrates a common error in Rust: creating multiple mutable references to the same variable.  This violates Rust's borrowing rules and can result in data races and unexpected behavior. The solution showcases using techniques like cloning or using interior mutability to avoid this issue.
