@@ -1,0 +1,1 @@
+fn main() {    let mut x = 5;    {        let y = &mut x;        *y = 6;    }    {        let z = &mut x;        *z = 7;    }    println!("x = {}", x); // Output will be 7, as the second mutable reference takes effect after the first.}
